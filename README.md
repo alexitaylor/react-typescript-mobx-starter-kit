@@ -1,10 +1,42 @@
+# 🚀 React + TypeScript + MobX Starter Kit
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Features
+- [React 16.X](https://reactjs.org/)
+- [TypScript](https://www.typescriptlang.org/)
+- [MobX](https://mobx.js.org/)
+
+<a name="tableofcontents"></a>
+
+# Table of Contents
+- [Requirements](#requirements)
+- [Getting Started](#gettingStarted)
+- [Available Scripts](#availableScripts)
+- [Contributing](#contributing)
+- [Learn More](#learnMore)
+
+<a name="requirements"></a>
+## [⬆️](#tableofcontents) Requirements
+- [Node](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/en/)
+
+<a name="gettingStarted"></a>
+## [⬆️](#tableofcontents) Getting Started
+- Fork Repo
+- Clone repo: `git clone git@github.com:<your-username>/react-typescript-mobx-starter-kit.git`
+- cd react-typescript-mobx-starter-kit
+- Add remote upstream: `git remote add upstream git@github.com:alexitaylor/react-typescript-mobx-starter-kit.git`
+- yarn install
+- yarn start
+- Visit [http://localhost:3000](http://localhost:3000)
+
+<a name="availableScripts"></a>
+## [⬆️](#tableofcontents) Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,12 +44,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `yarn run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,7 +59,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `yarn run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -37,7 +69,19 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<a name="contributing"></a>
+# [⬆️](#tableofcontents) Contributing
+
+Anyone is welcome to [contribute](.github/CONTRIBUTING.md),
+however, if you decide to get involved, please take a moment to review
+the [guidelines](.github/CONTRIBUTING.md):
+
+- [Bug reports](.github/CONTRIBUTING.md#bugs)
+- [Feature requests](.github/CONTRIBUTING.md#features)
+- [Pull requests](.github/CONTRIBUTING.md#pull-requests)
+
+<a name="learnMore"></a>
+## [⬆️](#tableofcontents) Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
