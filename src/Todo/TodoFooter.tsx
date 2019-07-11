@@ -31,12 +31,13 @@ export class TodoFooter extends React.Component<FooterProps, FooterState> {
 
   renderFilterLink(filter: TodoFilter) {
     const title = TODO_FILTER_TITLES[filter];
-    const { filter: selectedFilter, onChangeFilter } = this.props;
+    const { onChangeFilter } = this.props;
 
     return (
       <button
+        className="hover:shadow-none focus:outline-none"
         style={{ cursor: 'pointer' }}
-        onClick={() => onChangeFilter(selectedFilter)}
+        onClick={() => onChangeFilter(filter)}
       >
         {title}
       </button>
@@ -47,21 +48,29 @@ export class TodoFooter extends React.Component<FooterProps, FooterState> {
     const { completedCount, onClearCompleted } = this.props;
     if (completedCount > 0) {
       return (
-        <button className="clearCompleted" onClick={onClearCompleted} />
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onClearCompleted}>
+          Clear Completed
+        </button>
       );
     }
   }
 
   render() {
     return (
-      <footer className="normal">
+      <footer className="px-6 py-4">
         {this.renderTodoCount()}
-        <ul className="filters">
+        <div className="pt-4">
           {TODO_FILTER_TYPES.map((filter) => (
-            <li key={filter} children={this.renderFilterLink(filter)} />
+            <span
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 hover:shadow-outline hover:bg-gray-400 hover:text-blue-400"
+              key={filter}
+              children={this.renderFilterLink(filter)}
+            />
           ))}
-        </ul>
-        {this.renderClearButton()}
+        </div>
+        <div className="mt-5">
+          {this.renderClearButton()}
+        </div>
       </footer>
     );
   }

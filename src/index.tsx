@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "tailwindcss/base.css";
+import "tailwindcss/components.css";
+import "tailwindcss/utilities.css";
 import App from './App';
 import ServiceWorker from './serviceWorker';
 import { Provider } from 'mobx-react';

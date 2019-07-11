@@ -61,20 +61,25 @@ export class TodoItem extends React.Component<TodoProps, TodoState> {
         onSave={(text: string) => this.updateTodo({ text })}
       />
     ) : (
-      <div className="view">
-        <input
-          className="toggle"
-          type="checkbox"
-          checked={todo.completed}
-          onChange={this.handleToggleCheckbox}
-        />
+      <div className="flex flex-row py-3">
 
-        <label onDoubleClick={this.handleDoubleClick}>{todo.text}</label>
+        <label className="md:w-2/3 flex items-center text-gray-700 font-bold">
+          <input
+            className="mr-2 leading-tight text-2xl"
+            type="checkbox"
+            checked={todo.completed}
+            onChange={this.handleToggleCheckbox}
+          />
+          <span className="text-2xl" onDoubleClick={this.handleDoubleClick}>
+            {todo.text}
+          </span>
+        </label>
 
         <button
-          className="destroy"
-          onClick={this.handleClickDeleteButton}
-        />
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          onClick={this.handleClickDeleteButton}>
+          Delete
+        </button>
       </div>
     );
 

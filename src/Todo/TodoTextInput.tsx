@@ -44,6 +44,7 @@ export class TodoTextInput extends React.Component<TodoTextInputProps, TodoTextI
     return (
       <input
         type="text"
+        className="bg-white focus:outline-0 focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
         autoFocus
         placeholder={this.props.placeholder}
         value={this.state.text}

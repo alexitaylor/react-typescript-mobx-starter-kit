@@ -7,12 +7,12 @@ import './App.css';
 // render react DOM
 export const App = () => (
   <Router>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
+    <ul className="flex container mx-auto px-4 py-3">
+      <li className="mr-6">
+        <Link className="text-blue-500 hover:text-blue-800 text-lg" to="/">Home</Link>
       </li>
-      <li>
-        <Link to="/todo">Todo</Link>
+      <li className="mr-6">
+        <Link className="text-blue-500 hover:text-blue-800 text-lg" to="/todo">Todo</Link>
       </li>
     </ul>
 

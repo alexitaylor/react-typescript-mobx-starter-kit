@@ -59,16 +59,20 @@ export class Todo extends React.Component<TodoProps, TodoState> {
     );
 
     return (
-      <div className="normal">
-        <TodoHeader addTodo={todoStore.addTodo} />
-        <TodoList
-          todos={filteredTodos}
-          completeAll={todoStore.completeAll}
-          deleteTodo={todoStore.deleteTodo}
-          editTodo={todoStore.editTodo}
-        />
-        {footer}
-        {children}
+      <div className="h-screen w-screen bg-blue-700 flex items-center justify-center">
+        <div className="bg-white w-1/3 rounded overflow-hidden shadow-lg">
+          <TodoHeader addTodo={todoStore.addTodo} />
+          <TodoList
+            todos={filteredTodos}
+            completeAll={todoStore.completeAll}
+            unCompleteAll={todoStore.unCompleteAll}
+            deleteTodo={todoStore.deleteTodo}
+            editTodo={todoStore.editTodo}
+            completedTodos={todoStore.completedTodos}
+          />
+          {footer}
+          {children}
+        </div>
       </div>
     );
   }

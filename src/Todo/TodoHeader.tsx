@@ -19,8 +19,8 @@ export class TodoHeader extends React.Component<HeaderProps, HeaderState> {
 
   render() {
     return (
-      <header>
-        <h1>Todos</h1>
+      <header className="px-6 py-4">
+        <h1 className="font-bold text-xl mb-2">Todos</h1>
         <TodoTextInput
           newTodo
           onSave={this.handleSave}

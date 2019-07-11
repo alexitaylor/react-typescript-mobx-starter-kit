@@ -51,6 +51,11 @@ export class TodoStore {
   };
 
   @action
+  unCompleteAll = (): void => {
+    this.todos = this.todos.map((todo) => ({ ...todo, completed: false }));
+  };
+
+  @action
   clearCompleted = (): void => {
     this.todos = this.todos.filter((todo) => !todo.completed);
   };
