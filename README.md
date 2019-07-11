@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [React 16.X](https://reactjs.org/)
 - [TypScript](https://www.typescriptlang.org/)
 - [MobX](https://mobx.js.org/)
+- [React Router](https://github.com/ReactTraining/react-router)
 
 <a name="tableofcontents"></a>
 
