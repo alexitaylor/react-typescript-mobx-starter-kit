@@ -1,4 +1,4 @@
-# 🚀 React + TypeScript + MobX Starter Kit
+# 🚀 React + TypeScript + MobX + React Router + TailWindCSS Starter Kit
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [TypScript](https://www.typescriptlang.org/)
 - [MobX](https://mobx.js.org/)
 - [React Router](https://github.com/ReactTraining/react-router)
+- [TailWindCSS](https://tailwindcss.com/)
 
 <a name="tableofcontents"></a>
 
